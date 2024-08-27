@@ -24,10 +24,16 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+
     <!-- style -->
     <style>
       .manrope-font {
         font-family: "Manrope", sans-serif;
+      }
+      .discussion {
+        background-image: url(assets/bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
       }
     </style>
   </head>
@@ -350,8 +356,8 @@
         </div>
       </section>
       <!-- discussion section -->
-      <section class="">
-        <div>
+      <section class="discussion mt-1">
+        <div class="w-11/12 mx-auto py-20">
           <!-- top button -->
           <div class="flex justify-center">
             <button
@@ -371,6 +377,57 @@
             The barn house captivates with its blend of rustic charm and modern
             sophistication, featuring weathered wood, sleek metal accents.
           </p>
+          <!-- input field -->
+          <div class=" w-11/12 md:w-9/12 mx-auto">
+            <!-- item 1 -->
+            <div class="mx-auto w-full gap-5 flex flex-col md:flex-row">
+              <input
+                class="rounded-full flex-1 px-8 py-3"
+                type="text"
+                placeholder="First Name*"
+              />
+              <input
+                class="rounded-full flex-1 px-8 py-3"
+                type="text"
+                placeholder="Last Name*"
+              />
+            </div>
+            <!-- item 2 -->
+            <div class="my-6 mx-auto w-full gap-5 flex flex-col md:flex-row">
+              <input
+                class="rounded-full flex-1 px-8 py-3"
+                type="text"
+                placeholder="Phone Number*"
+              />
+              <input
+                class="rounded-full flex-1 px-8 py-3"
+                type="email"
+                placeholder="Your Email*"
+              />
+            </div>
+            <!-- item 3 -->
+            <div class="my-4">
+              <textarea
+                name=""
+                id=""
+                class="w-full rounded-lg pt-4 pl-4"
+                placeholder="Write your message here"
+                cols=""
+                rows="10"
+              ></textarea>
+            </div>
+            <!-- item 4 -->
+            <div>
+              <button
+                class="bg-[#ABEF5F] w-full flex gap-2 justify-center items-center rounded-full px-3 py-1 mx-auto"
+              >
+                <span class="font-bold text-sm">Sent Mail</span>
+                <div class="bg-black text-white p-1 px-[9px] rounded-full">
+                  <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                </div>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
