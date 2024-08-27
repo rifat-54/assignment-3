@@ -10,12 +10,9 @@
       crossorigin="anonymous"
     ></script>
     <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
     <!-- daisy ui and tailwind -->
     <link
@@ -24,11 +21,93 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- style -->
+    <style>
+        .manrope-font{
+          font-family: "Manrope", sans-serif;
+        }
+       
+    </style>
 </head>
-<body>
+<body class="manrope-font">
     <!-- hader start -->
-    <header>
+    <header class="bg-gray-50 pb-5">
+      <div class="w-11/12 mx-auto py-4 ">
+        <nav>
+          <div class="navbar ">
+            <div class="navbar-start">
+              <div class="dropdown">
+                
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Services</a></li>
+                  <li><a href="">Portfolio</a></li>
+                  <li><a href="">Blogs</a></li>
+                  <li><a href="">Contact Us</a></li>
+                  
+                </ul>
+              </div>
+              <div class="bg-[#ABEF5F] p-1 px-[9px] rounded-full">
 
+                <i class="fa-solid fa-arrow-right -rotate-45 "></i>
+              </div>
+              <a class="btn btn-ghost text-xl md:text-4xl font-bold">Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1 text-[16px] font-bold text-[#737373]">
+                  <li class="text-[#494949]"><a href="">Home</a></li>
+                  <li><a href="">Services</a></li>
+                  <li><a href="">Portfolio</a></li>
+                  <li><a href="">Blogs</a></li>
+                  <li><a href="">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end ">
+              <!-- side icon -->
+              <div class="hidden md:inline">
+                <div class="flex gap-2 ">
+                  <div class="bg-white text-[#737373] py-2 px-3 rounded-full">
+  
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </div>
+                  <div class="bg-white text-[#737373] py-2 px-3 rounded-full">
+  
+                    <i class="fa-solid fa-cart-shopping"></i>
+                  </div>
+                </div>
+              </div>
+              <a class="btn ml-3 rounded-full bg-[#ABEF5F]">Book Consult
+                <div class="bg-[#000000] text-white py-2 px-[9px] rounded-full">
+
+                  <i class="fa-solid fa-arrow-right -rotate-45 "></i>
+                </div>
+
+              </a>
+            </div>
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <!-- banner -->
+      <div class="flex my-12 gap-8 flex-col justify-center items-center">
+        <div>
+          <img class="w-10/12 mx-auto" src="assets/banner.png" alt="">
+        </div>
+        <h1 class="text-center text-3xl md:text-5xl font-extrabold">A barn house of this design has a <br> striking appearance</h1>
+        <p class="w-6/12 text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+        <button class="bg-[#ABEF5F80] flex gap-2 justify-center items-center rounded-full px-3 py-2"><span class="font-bold">View Details</span>
+          <div class="bg-[#ABEF5F] p-1 px-[9px] rounded-full">
+
+            <i class="fa-solid fa-arrow-right -rotate-45 "></i>
+          </div>
+        </button>
+      </div>
+        
     </header>
     <!-- main -->
     <main>
